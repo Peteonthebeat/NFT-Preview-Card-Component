@@ -1,0 +1,136 @@
+/* Browser Reset */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;600;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* Fonts and Stuff */
+/* font-family: "Outfit", sans-serif; */
+/* Body and Main */
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  background-color: hsl(217deg, 54%, 11%);
+}
+
+/* Container and Stuff */
+.container {
+  padding: 1.5em;
+  background-color: hsl(216deg, 50%, 16%);
+  border-radius: 1em;
+  color: white;
+  box-shadow: hsl(216deg, 82%, 9%) 0px 20px 15px 10px;
+}
+
+/* Main Image */
+.main-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5em 0.5em 0.5em 0.5em;
+}
+
+/* Headings and Text */
+h1 {
+  padding-top: 1em;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 200;
+}
+
+/* Span Tags, Icons, and Stuff */
+.spans {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  margin-left: 0.3em;
+}
+
+.eth {
+  display: flex;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  font-weight: 200;
+}
+
+.eth-span {
+  margin-right: 4em;
+  font-weight: 700;
+  color: hsl(178deg, 100%, 50%);
+}
+
+/* Creation Div */
+.creation {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+}
+
+/* HR */
+hr {
+  border-top: 0.5px solid white;
+  opacity: 0.05;
+}
+
+/* Avatar */
+.avatar {
+  max-width: 2em;
+  height: auto;
+  margin-right: 1em;
+  border-radius: 50%;
+  border: 0.1rem solid white;
+}
+
+s {
+  font-weight: 400;
+}
+
+/* Elements Padding */
+.spans,
+.text,
+h1 {
+  padding-bottom: 1em;
+}
+
+/* Media and Break Points */
+@media (min-width: 1024px) {
+  .container {
+    width: 25vw;
+  }
+}
+/*
+@media (min-width: 1024px) {
+  body {
+    padding-left: 20em;
+    padding-right: 20em;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    padding-left: 50em;
+    padding-right: 50em;
+  }
+}
+*//*# sourceMappingURL=styles.css.map */
