@@ -8,8 +8,6 @@
   text-decoration: none;
 }
 
-/* Fonts and Stuff */
-/* font-family: "Outfit", sans-serif; */
 /* Body and Main */
 body {
   width: 100vw;
@@ -74,9 +72,18 @@ span {
   font-weight: 200;
 }
 
+.clock-icon {
+  margin-right: 0.5em;
+}
+
 .eth-span {
+  margin-right: 0.5em;
+} 
+
+.eth-p {
   font-weight: 700;
   color: hsl(178deg, 100%, 50%);
+
 }
 
 /* Creation Div */
@@ -84,12 +91,8 @@ span {
   display: flex;
   align-items: center;
   margin-top: 1em;
-}
-
-/* HR */
-hr {
-  border-top: 0.5px solid white;
-  opacity: 0.05;
+  padding-top: 1em;
+  border-top: 0.2px solid rgba(255, 255, 255, 0.1)
 }
 
 /* Avatar */
@@ -112,24 +115,13 @@ h1 {
   padding-bottom: 1em;
 }
 
+a {
+  color: white;
+}
+
 /* Media and Break Points */
 @media (min-width: 1024px) {
   .container {
     width: 25vw;
   }
 }
-/*
-@media (min-width: 1024px) {
-  body {
-    padding-left: 20em;
-    padding-right: 20em;
-  }
-}
-
-@media (min-width: 1200px) {
-  body {
-    padding-left: 50em;
-    padding-right: 50em;
-  }
-}
-*//*# sourceMappingURL=styles.css.map */
