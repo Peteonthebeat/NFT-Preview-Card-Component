@@ -5,40 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NFT Preview Card Component</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
   <body>
     <div class="container">
       <img
         class="main-image"
-        src="image-equilibrium.jpg"
+        src="/images/image-equilibrium.jpg"
         alt="equilibrium"
       />
-      <h1>Equilibrium #3429</h1>
+      <a href="#"><h1>Equilibrium #3429</h1></a>
       <p class="text">Our Equilibrium collection promotes balance and calm.</p>
-      <div class="spans">
-        <div class="eth">
-          <img src="icon-ethereum.svg" alt="etherium-icon" /><span
+      <ul class="spans">
+        <li class="eth">
+          <img
             class="icon eth-span"
-            >0.041 ETH</span
-          >
-        </div>
-        <div class="clock">
-          <img src="icon-clock.svg" alt="clock-icon" /><span
-            class="icon clock-span"
-          >
-            3 days left</span
-          >
-        </div>
-      </div>
-      <hr />
+            src="/images/icon-ethereum.svg"
+            alt="etherium-icon"
+          />
+
+          <p class="eth-p">0.041 ETH</p>
+        </li>
+        <li class="clock">
+          <img
+            class="clock-icon"
+            src="/images/icon-clock.svg"
+            alt="clock-icon"
+          />
+          <p>3 days left</p>
+        </li>
+      </ul>
+
       <div class="creation">
-        <img
-          class="avatar"
-          src="image-avatar.png"
-          alt="some-boy-avatar"
-        />
-        <p>Creation of <span class="name">Jules Wyvern</span></p>
+        <img class="avatar" src="/images/image-avatar.png" alt="Jules Wyvern" />
+        <p>Creation of <a href="#" class="name">Jules Wyvern</a></p>
       </div>
     </div>
   </body>
