@@ -1,5 +1,4 @@
 /* Browser Reset */
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;600;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +6,10 @@
   list-style-type: none;
   text-decoration: none;
 }
+
+/* Fonts and Stuff */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;600;800;900&display=swap");
+/* font-family: "Outfit", sans-serif; */
 
 /* Body and Main */
 body {
@@ -16,16 +19,17 @@ body {
   justify-content: center;
   align-items: center;
   padding: 2em;
-  background-color: hsl(217deg, 54%, 11%);
+  background-color: hsl(217, 54%, 11%);
 }
 
 /* Container and Stuff */
 .container {
   padding: 1.5em;
-  background-color: hsl(216deg, 50%, 16%);
+  background-color: hsl(216, 50%, 16%);
   border-radius: 1em;
   color: white;
-  box-shadow: hsl(216deg, 82%, 9%) 0px 20px 15px 10px;
+
+  box-shadow: hsl(216deg 82% 9%) 0px 20px 15px 10px;
 }
 
 /* Main Image */
@@ -49,6 +53,7 @@ p {
 }
 
 /* Span Tags, Icons, and Stuff */
+
 .spans {
   display: flex;
   justify-content: space-between;
@@ -68,23 +73,14 @@ span {
 .clock {
   display: flex;
   align-items: center;
-  margin-right: 0.5em;
   font-family: "Outfit", sans-serif;
   font-weight: 200;
 }
 
-.clock-icon {
-  margin-right: 0.5em;
-}
-
 .eth-span {
-  margin-right: 0.5em;
-} 
-
-.eth-p {
+  margin-right: 4em;
   font-weight: 700;
-  color: hsl(178deg, 100%, 50%);
-
+  color: hsl(178, 100%, 50%);
 }
 
 /* Creation Div */
@@ -92,8 +88,12 @@ span {
   display: flex;
   align-items: center;
   margin-top: 1em;
-  padding-top: 1em;
-  border-top: 0.2px solid rgba(255, 255, 255, 0.1)
+}
+
+/* HR */
+hr {
+  border-top: 0.5px solid white;
+  opacity: 0.05;
 }
 
 /* Avatar */
@@ -110,14 +110,11 @@ span {
 }
 
 /* Elements Padding */
+
 .spans,
 .text,
 h1 {
   padding-bottom: 1em;
-}
-
-a {
-  color: white;
 }
 
 /* Media and Break Points */
@@ -126,6 +123,7 @@ a {
     width: 25vw;
   }
 }
+
 /*
 @media (min-width: 1024px) {
   body {
@@ -140,3 +138,4 @@ a {
     padding-right: 50em;
   }
 }
+*/
