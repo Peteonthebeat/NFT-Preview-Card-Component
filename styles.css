@@ -8,6 +8,8 @@
   text-decoration: none;
 }
 
+/* Fonts and Stuff */
+/* font-family: "Outfit", sans-serif; */
 /* Body and Main */
 body {
   width: 100vw;
@@ -28,11 +30,42 @@ body {
   box-shadow: hsl(216deg, 82%, 9%) 0px 20px 15px 10px;
 }
 
+/* Figure */
+figure {
+  position: relative;
+}
+
 /* Main Image */
 .main-image {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  border-radius: 0.5em 0.5em 0.5em 0.5em;
+  border-radius: 0.5em;
+}
+
+/* Hover and Stuff */
+.overlay {
+  border-radius: 0.5em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+}
+
+.container:hover .overlay {
+  opacity: 0.5;
+}
+
+.container:hover .main-image {
+  background-color: cyan;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: opacity 0.2s ease-out;
 }
 
 /* Headings and Text */
@@ -68,6 +101,7 @@ span {
 .clock {
   display: flex;
   align-items: center;
+  margin-right: 0.5em;
   font-family: "Outfit", sans-serif;
   font-weight: 200;
 }
@@ -78,12 +112,11 @@ span {
 
 .eth-span {
   margin-right: 0.5em;
-} 
+}
 
 .eth-p {
   font-weight: 700;
   color: hsl(178deg, 100%, 50%);
-
 }
 
 /* Creation Div */
@@ -92,7 +125,7 @@ span {
   align-items: center;
   margin-top: 1em;
   padding-top: 1em;
-  border-top: 0.2px solid rgba(255, 255, 255, 0.1)
+  border-top: 0.2px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Avatar */
@@ -119,9 +152,13 @@ a {
   color: white;
 }
 
+a:hover {
+  color: cyan;
+}
+
 /* Media and Break Points */
 @media (min-width: 1024px) {
   .container {
     width: 25vw;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
